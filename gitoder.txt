@@ -1,0 +1,13 @@
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+$ git init :把这个目录变成Git可以管理的仓库
+$ git add readme.txt :把文件添加到仓库
+$ git commit -m "wrote a readme file" :把文件提交到仓库
+$ git status :git status命令可以让我们时刻掌握仓库当前的状态，上面的命令输出告诉我们，readme.txt被修改过了，但还没有准备提交的修改。
+$ git diff readme.txt :git diff顾名思义就是查看difference，显示的格式正是Unix通用的diff格式
+$ git log :版本控制系统历史记录
+$ git log --pretty=oneline
+$ git reset --hard HEAD^ :用HEAD表示当前版本,上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+$ cat readme.txt :看文件内容
+$ git reset --hard 1094a ：回到之前的版本"1094a"为之前的commit id的前五个数
+$ git reflog ：记录你的每一次修改版本号的命令
